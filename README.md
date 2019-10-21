@@ -38,8 +38,9 @@ and [mbed cli](#install-offline-toolchain) were chosen as the official dev tool 
 
 the core dev team uses [manual installation](https://os.mbed.com/docs/mbed-os/v5.14/tools/manual-installation.html) though
 
-#### [Dockerfile](Dockerfile)
-
+#### Dockerfile
+> [the file](Dockerfile)
+a pre-configured development environment for testing and developing
 > WIP
 
 **STRONGLY ENCOURAGES YOU TO USE A VIRTUAL ENVIRONMENT to protect your system**
