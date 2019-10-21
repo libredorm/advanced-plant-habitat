@@ -6,6 +6,7 @@ Fully automated plant growth facility
 - [🚀 Roadmap](#roadmap)
 - [🤓 Quick Start](#quick-start)
 - [📁 Folder Organization](#folder-organization)
+- [👷 Quick Start for Contributers](#quick-start-for-contributers)
 ---
 
 <a name="roadmap"></a>
@@ -22,7 +23,7 @@ Add irrigation system
 Add additional sensors, try to improve the irrigation system
 
 <a name="quick-start"></a>
-## Quick Start
+## 🤓 Quick Start
 
 
 ### Development Environment
@@ -61,3 +62,12 @@ a pre-configured development environment for testing and developing
     |-- server
     `-- hub
 ```
+
+<a name="quick-start-for-contributers"></a>
+## 👷 Quick Start for Contributers
+
+we use the `GCC ARM embedded` toolchain, which the toolchain is set for you in the local configs, however
+you must set your `GCC_ARM_PATH` to the correct place via `mbed`:  
+e.g. macs -> `/usr/local/bin/`, linux -> `/usr/bin/`
+
+or via environment variables, that is to set `MBED_GCC_ARM_PATH`
