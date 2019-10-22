@@ -1,1 +1,4 @@
 Bill of Materials
+
+Raspberry Pi 4B
+STM nucleo-L476RG
