@@ -57,7 +57,7 @@ a pre-configured development environment for testing and developing
 |   `-- software
 |       |-- server.md
 |       |-- hub.md
-|       `-- sensors.md
+|       `-- data-sources.md
 `-- software
     |-- server
     `-- hub

@@ -1,6 +1,6 @@
 # Software
 
-[Sensors](sensors)
+[Data Sources](data-sources)
 
 [Hub / Gateway](hub)
 
