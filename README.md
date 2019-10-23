@@ -1,33 +1,36 @@
 # Advanced Plant Habitat 🌱🌺🥑
-Fully automated plant growth facility
+Fully automated plant nursing facility
+
+---
+
+Inspired by the eponymous NASA project, the Advanced Plant Habitat is a fully automated plant nursing facility that keeps your plants thriving.
+It takes care of the fundamentals, automates irrigating, draining, fertilizing, bitsy things that you tend to forget at times.
+Intended for people who love plants but can't keep anything alive, you can automate your garden, or even build a massive farm.
 
 ---
 ## Table of Contents
-- [🚀 Roadmap](#roadmap)
-- [🤓 Quick Start](#quick-start)
-- [📁 Folder Organization](#folder-organization)
-- [👷 Quick Start for Contributers](#quick-start-for-contributers)
+- [Architecture](#architecture)
+- [Quick Start](#quick-start)
+- [Folder Organization](#folder-organization)
+- [Quick Start for Contributers](#quick-start-for-contributers)
+- [Roadmap](#roadmap)
 ---
 
-<a name="roadmap"></a>
-## 🚀 Roadmap
-We plan to implement the habitat in three stages
+<a name"architecture"></a>
+## Architecture
+The system consists of three components: servers, data hubs, and sensors.
 
-### Stage 1 
-Soil moisture sensor only
+The sensors,  being placed beside each plant, gather information about its surroundings, providing insights about the state of the plant.
+ Sensors are connected to and powered by data hubs by wires.
 
-### Stage 2
-Add irrigation system
+The data hubs act like brokers, collect and upload data to the server via WiFi.
 
-### Stage 3
-Add additional sensors, try to improve the irrigation system
+The server is where the magic happens.
 
 <a name="quick-start"></a>
 ## 🤓 Quick Start
-
-Python3 is required
-
-Python requirements are in
+server and hub programs need Python3 to run,
+ and packages listed here:
 
 ```
 .
@@ -36,6 +39,21 @@ Python requirements are in
     |   `-- requirements.txt
     `-- server
         `-- requirements.txt
+```
+
+
+<a name="folder-organization"></a>
+## 📁 Folder Organization
+
+```text
+.
+|-- Dockerfile
+`-- software
+    |-- hub
+    |   `-- requirements.txt
+    `-- server
+        |-- requirements.txt
+        `-- supervisord.conf
 ```
 
 <a name="quick-start-for-contributers"></a>
@@ -53,20 +71,17 @@ a pre-configured development environment for testing and developing
 
 **STRONGLY ENCOURAGES YOU TO USE A VIRTUAL ENVIRONMENT to protect your system**
 
-<a name="folder-organization"></a>
-## 📁 Folder Organization
-```text
-.
-|-- docs
-|   |-- hardware
-|   |   |-- system-design.md
-|   |   `-- electrical-design.md
-|   `-- software
-|       |-- server.md
-|       |-- hub.md
-|       `-- data-sources.md
-`-- software
-    |-- server
-    `-- hub
-```
+
+<a name="roadmap"></a>
+## 🚀 Roadmap
+We plan to implement the habitat in three stages:
+
+### Stage 1
+Soil moisture sensors only
+
+### Stage 2
+Add irrigation system
+
+### Stage 3
+Add additional sensors, try to improve the irrigation system
 
