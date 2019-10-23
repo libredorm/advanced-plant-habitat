@@ -28,19 +28,9 @@ Add additional sensors, try to improve the irrigation system
 
 ### Development Environment
 
-Parts of the embedded submodules are built on top of [Arm mbed OS 5](https://os.mbed.com/docs/mbed-os/v5.14/introduction/index.html),
-
-and [mbed cli](#install-offline-toolchain) were chosen as the official dev tool for the granular controls it provides
-
-<a name="install-offline-toolchain"></a>
-#### Installing the offline cli toolchain
-
-> there are [official installers](https://os.mbed.com/docs/mbed-os/v5.14/tools/installation-and-setup.html) for an one stop installation experience
-
-the core dev team uses [manual installation](https://os.mbed.com/docs/mbed-os/v5.14/tools/manual-installation.html) though
-
 #### Dockerfile
 > [the file](Dockerfile)
+
 a pre-configured development environment for testing and developing
 > WIP
 
@@ -66,8 +56,3 @@ a pre-configured development environment for testing and developing
 <a name="quick-start-for-contributers"></a>
 ## 👷 Quick Start for Contributers
 
-we use the `GCC ARM embedded` toolchain, which the toolchain is set for you in the local configs, however
-you must set your `GCC_ARM_PATH` to the correct place via `mbed`:  
-e.g. macs -> `/usr/local/bin/`, linux -> `/usr/bin/`
-
-or via environment variables, that is to set `MBED_GCC_ARM_PATH`
