@@ -8,6 +8,18 @@ hardware system design at a glance
 ## System Architecture
 distributed serving cluster
 
+if the hub has enough computing power, it can be set to become worker nodes for the server
+
+protocols:
+
+```text
+servers
+⇅ MQTT
+hubs
+⇅ I2C
+sensors
+```
+
 ```text
 .
 |-- server-1 🖥 at location 1
@@ -53,7 +65,6 @@ triple layers:
 
 - [Raspberry Pi 3 A+](https://www.raspberrypi.org/products/raspberry-pi-3-model-a-plus/) middleweight wireless gateway
 - [Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/) lightweight wireless gateway
-- [NUCLEO-L476RG](https://www.st.com/en/evaluation-tools/nucleo-l476rg.html) ultra low power data hub
 
 <a name="sensor-ref"</a>
 ### Sensors
