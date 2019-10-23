@@ -1,0 +1,24 @@
+#########################
+#                       #
+#  System Requirements  #
+#                       #
+#########################
+#
+#  Process Management
+#
+#  Task Scheduler
+#
+#########################
+
+#  Process Management
+#######################
+supervisor
+
+#  Task Scheduler
+###################
+apache-airflow
+apache-airflow[crypto]
+apache-airflow[ldap]
+apache-airflow[password]
+apache-airflow[ssh]
+
