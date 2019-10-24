@@ -3,32 +3,34 @@ Fully automated plant nursing facility
 
 ---
 
-Inspired by the eponymous NASA project, the Advanced Plant Habitat is a fully automated plant nursing facility that keeps your plants thriving.
-It takes care of the fundamentals, automates irrigating, draining, fertilizing, bitsy things that you tend to forget at times.
-Intended for people who love plants but can't keep anything alive, you can automate your garden, or even build a massive farm.
+Intended for people who love plants but can't keep anything alive,  
+the Advanced Plant Habitat is here to automate your garden and manage your farm.
 
 ---
 ## Table of Contents
-- [Architecture](#architecture)
+- [About](#about)
 - [Quick Start](#quick-start)
 - [Folder Organization](#folder-organization)
 - [Quick Start for Contributers](#quick-start-for-contributers)
 - [Roadmap](#roadmap)
 ---
 
-<a name"architecture"></a>
-## Architecture
-The system consists of three components: servers, data hubs, and sensors.
-
-The sensors,  being placed beside each plant, gather information about its surroundings, providing insights about the state of the plant.
- Sensors are connected to and powered by data hubs by wires.
-
-The data hubs act like brokers, collect and upload data to the server via WiFi.
-
-The server is where the magic happens.
+<a name="about"></a>
+## About
+Inspired by the eponymous NASA project, the Advanced Plant Habitat is a fully automated plant nursing facility that keeps your plants thriving.
+It takes care of the fundamentals, automates irrigating, draining, fertilizing, bitsy things that you tend to forget at times.
 
 <a name="quick-start"></a>
 ## 🤓 Quick Start
+
+The system consists of three components: servers, data hubs, and sensors.
+
+You will need a tiny server, possibly a single board computer like Raspberry Pi, 
+ a microcontroller as the data hub,
+ sensors and water pumps for each plant.
+
+Take a look at the [reference design](https://libredorm.github.io/advanced-plant-habitat/hardware/system-design#reference-design) might help you get an idea of what is needed
+
 server and hub programs need Python3 to run,
  and packages listed here:
 
